@@ -1,0 +1,14 @@
+docker container  ls -a
+source .venv/bin/activate
+
+curl -X POST -H "Content-Type: application/json" -u admin1:admin1 -d '{"name": "John Doe", "age": 30, "city": "New York"}' http://localhost:5000/data
+curl -X POST -H "Content-Type: application/json" -u admin1:admin1 -d '{"name": "Alan Turing", "age": 30, "city": "Sangli"}' http://localhost:5000/data
+curl -X POST -H "Content-Type: application/json" -u admin1:admin1 -d '{"name": "Dennis Ritchi", "age": 30, "city": "Kolhapur"}' http://localhost:5000/data
+curl -X POST -H "Content-Type: application/json" -u admin1:admin1 -d '{"name": "Brian Karnighan", "age": 30, "city": "Atpadi"}' http://localhost:5000/data
+curl -X GET -u admin1:admin1 -H "Content-Type: application/json" http://localhost:5000/data/6665bbb2932d4529ebd5997b
+curl -u admin1:admin1  http://localhost:5000/data/6665bbb2932d4529ebd5997b
+curl -X PUT -H "Content-Type: application/json" -u admin1:admin1 -d '{"city": "Solapur"}' http://localhost:5000/data/6665bbb2932d4529ebd5997b
+curl -X DELETE -H "Content-Type: application/json" -u admin1:admin1 -d '{"city": "Pune"}' http://localhost:5000/data/6665bbc9932d4529ebd5997c
+
+
+
