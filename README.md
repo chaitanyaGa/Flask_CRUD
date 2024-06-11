@@ -45,7 +45,7 @@ curl -X POST -H "Content-Type: application/json" -u admin1:admin1 -d '{"name": "
 curl -X POST -H "Content-Type: application/json" -u admin1:admin1 -d '{"name": "Alan Turing", "age": 30, "city": "Sangli"}' http://localhost:5000/data
 curl -X POST -H "Content-Type: application/json" -u admin1:admin1 -d '{"name": "Dennis Ritchi", "age": 30, "city": "Kolhapur"}' http://localhost:5000/data
 curl -X POST -H "Content-Type: application/json" -u admin1:admin1 -d '{"name": "Brian Karnighan", "age": 30, "city": "Atpadi"}' http://localhost:5000/data
-curl -X GET -H "Content-Type: application/json" http://localhost:5000/data/<id>
+curl -X GET -H "Content-Type: application/json"  -u admin1:admin1 http://localhost:5000/data/<id>
 curl -u admin1:admin1 http://localhost:5000/data/<id>
 curl -X PUT -H "Content-Type: application/json" -u admin1:admin1 -d '{"city": "Solapur"}' http://localhost:5000/data/<id>
 curl -X DELETE-H "Content-Type: application/json" -u admin1:admin1 http://localhost:5000/data/<id>
