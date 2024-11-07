@@ -53,11 +53,12 @@ curl -X DELETE-H "Content-Type: application/json" -u admin1:admin1 http://localh
 
 
 ## Running the application as Dockerized:
-
+```
 cd myproj/Docker  #here resides dockerfile used for starting container
 docker build -t myflaskapp .          # we are building container here
 docker run -p 5000:5000  myflaskapp   # we are running container here
 docker ps                             # To check if container is started.
+```
 
 Now once above container is started we can run above cURL commands to perform CRUD operations.
 
